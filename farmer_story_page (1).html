@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeevbhoomi Farmer Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5e6d3; /* soft earthy brown */
+      background-image: 
+        radial-gradient(circle at 20px 20px, #9fc490 2px, transparent 0),
+        radial-gradient(circle at 60px 60px, #9fc490 2px, transparent 0);
+      background-size: 80px 80px; /* spacing of grass dots */
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .story-box {
+      position: relative;
+      padding: 30px 40px;
+      border-radius: 15px;
+    }
+    /* Watermark logo */
+.story-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  background: url('logo.png') no-repeat center center; /* logo in same folder */
+  background-size: contain;
+  opacity: 0.08; /* faint transparent watermark */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+
+    /* Content above watermark */
+    .story-box > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .farmer-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 1rem auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      border: 3px solid #7a5230;
+    }
+
+    .tagline {
+      font-family: 'Caveat', cursive;
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      color: #2E8B57;
+    }
+
+    .story-section {
+      margin: 2rem 0;
+      font-size: 1.8em;
+      line-height: 1.7;
+      text-align: justify;
+      color: #4a4a4a;
+      font-family: 'Caveat', cursive;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .story-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .buttons {
+      margin: 2rem 0;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      background: #7a5230;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background: #5c3e23;
+    }
+
+    .team-section {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px dashed #ccc;
+    }
+
+    .team-section h2 {
+      font-size: 2em;
+      color: #7a5230;
+      margin-bottom: 2rem;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .team-member {
+      flex-basis: 150px;
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #9fc490;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member p {
+      font-weight: bold;
+      margin-top: 0.8rem;
+      color: #4a4a4a;
+      font-size: 1.1em;
+    }
+
+    .logo {
+      margin-top: 3rem;
+    }
+
+    .logo img {
+      width: 120px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="story-box">
+      <img src="C:\Users\hp\Desktop\farmerhd.jpg" alt="A proud farmer from Jeevbhoomi" class="farmer-img" />
+
+      <div class="tagline">"We don't just grow food, we grow hope."</div>
+
+      <div class="story-section">
+        <p>Meet Shankar. For as long as he can remember, this small patch of land has been his family's world. But over the years, the soil grew tired, needing more chemicals just to survive. Shankar worried about the health of the land he would one day leave for his children.</p>
+      </div>
+      <div class="story-section">
+        <p>One afternoon, the Jeevbhoomi team arrived. We didn't come with contracts; we came to listen. We talked about farming the natural way, to bring life back to his soil, not just for one season, but forever.</p>
+      </div>
+      <div class="story-section">
+        <p>Together, we stopped using harsh chemicals and started making rich, natural compost. Slowly, a miracle happened. His land began to breathe again. The plants grew stronger and tasted sweeter than ever before.</p>
+      </div>
+      <div class="story-section">
+        <p>Today, Shankar is a guardian of the soil. The product you hold is a piece of his story. It's a taste of the pride and renewed hope that you help create.</p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <a href="#">Thank You for Supporting Farmers</a>
+      <a href="#">Learn More about Jeevbhoomi</a>
+    </div>
+
+    <div class="team-section">
+      <h2>Meet Our Founders</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="C:\Users\hp\Desktop\gayathripic.jpg" alt="'Gaythri'" />
+          <p>Gaythri</p>
+        </div>
+        <div class="team-member">
+          <img src="C:\Users\hp\Desktop\anushripic.jpg" alt="Anushri" />
+          <p>Anushri</p>
+        </div>
+        <div class="team-member">
+          <img src="C:\Users\hp\Desktop\harry.jpg" alt="Harish" />
+          <p>Harish</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo">
+      <img src="C:\Users\hp\Desktop\logo.png" alt="Jeevbhoomi Logo" />
+    </div>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('.story-section');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const boxTop = section.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          section.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
